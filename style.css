@@ -1,7 +1,114 @@
-.navbar {
-   opacity: 0.8;
-    border-bottom: 1px solid #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.jumbotron{
-    padding-top: 100px;
+
+html {
+    font-size: 10px;
+}
+
+body {
+
+    font-family: 'Playfair Display', serif;
+    color: azure;
+    font-size: 1.4rem;
+    line-height: 1.0;
+    text-align: center;
+}
+
+header {
+    height: 45rem;
+}
+
+header .bg-image {
+    position: absolute;
+    background-color: darkred;
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+header img {
+    padding: 5rem;
+    padding-bottom: 0;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #b7b5b5;
+    color: black;
+    border: 3px solid #666;
+    border-radius: 15px;
+    padding: 1.8rem 3.2rem;
+    margin: .6rem;
+    transition: all 0.7s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: darkseagreen;
+}
+
+.content p {
+    font-size: 25px;
+}
+
+#gallery {
+    width: 1000px;
+    margin: 20px auto;  
+    padding: 3.2rem;
+}
+
+.item-container {
+    width: 100%;
+    float: left;
+    padding: 5px;
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+}
+
+.gallery-item:hover {
+    border: 1px solid #777;
+    opacity: 0.8;
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-height: 100%;
+    height: auto;
+}
+
+.description {
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+@media screen and (min-width:800px){
+    
+   
+    main{
+        max-width: 150%;
+        display: inline-block;
+        max-height: 1rem;
+    }
+    .item-container {
+    width: 20%;
+    float: left;
+    padding: 5px;
+}
 }
